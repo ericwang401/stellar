@@ -1,9 +1,9 @@
-
+import ContentContainer from 'components/ContentContainer'
 
 export default function Home() {
   return (
-    <>
-      <h1 className={'text-4xl'}>hello</h1>
-    </>
+    <ContentContainer>
+      <h1 className={'text-5xl'}>stellar: explore universe</h1>
+    </ContentContainer>
   )
 }

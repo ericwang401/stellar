@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import 'styles/globals.css'
+import GlobalStyles from 'styles/GlobalStyles'
 import type { AppProps } from 'next/app'
 import { Inter } from '@next/font/google'
 import type { ReactElement, ReactNode } from 'react'
@@ -18,5 +19,8 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page)
 
-  return getLayout(<main className={inter.className}><Component {...pageProps} /></main>)
+  return getLayout(<main className={inter.className}>
+    <GlobalStyles />
+    <Component {...pageProps} />
+  </main>)
 }
