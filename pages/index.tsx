@@ -5,6 +5,11 @@ import earthFromSpace from 'assets/images/earth-from-space.jpg'
 import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
 import { motion } from 'framer-motion'
+import { Canvas, useLoader } from '@react-three/fiber'
+import { Model as Rocket } from 'assets/3d/rocket-ship/Rocket'
+import { Suspense } from 'react'
+import { useGLTF } from '@react-three/drei'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const Heading = styled.h1`
     background: linear-gradient(180deg, #fff, #aaa), #fff;
@@ -78,6 +83,20 @@ const HeaderTextContainer = styled.div`
     animation-fill-mode: forwards;
 `
 
+const Model = () => {
+    // location of the 3D model
+    const gltf = useLoader(GLTFLoader, '/assets/3d/rocket-ship/rocket.gltf')
+    return (
+        <>
+            <primitive
+                object={gltf.scene}
+                scale={1.4}
+                rotation={[-1.5708, -0.785398, -1.57]}
+            />
+        </>
+    )
+}
+
 export default function Home() {
     return (
         <Header>
@@ -100,6 +119,25 @@ export default function Home() {
                             trip with Stellar.
                         </p>
                     </HeaderTextContainer>
+
+                    <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
+                        <div className='lg:absolute'>
+                            <Canvas
+                                className='relative aspect-[366/729] mx-auto max-w-[366px]'
+                                camera={{ position: [12, 10, 0] }}
+                            >
+                                <ambientLight intensity={1} />
+                                <spotLight
+                                    intensity={0.5}
+                                    angle={0.1}
+                                    penumbra={1}
+                                    position={[10, 15, 10]}
+                                    castShadow
+                                />{' '}
+                                <Model />
+                            </Canvas>
+                        </div>
+                    </div>
                 </div>
             </ContentContainer>
         </Header>
