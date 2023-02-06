@@ -26,7 +26,6 @@ const backgroundClipInAnimation = keyframes`
 const StyledHeader = styled.div`
     ${tw`py-20 sm:py-32 lg:pb-32 xl:pb-36 bg-foreground relative overflow-hidden`}
 
-    @media (min-width: 1024px) {
         &::before {
             content: '';
             position: absolute;
@@ -47,7 +46,6 @@ const StyledHeader = styled.div`
             animation-duration: 1s;
             animation-fill-mode: forwards;
         }
-    }
 `
 
 const TextFadeInUpAnimation = keyframes`

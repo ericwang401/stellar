@@ -28,10 +28,12 @@ const NavBar = () => {
                         <Image height='18' src={Logo} alt='Logo' className='invert' />
                         <span className='text-white font-mediu'>Stellar</span>
                     </Link>
-                    <FlatNavLink href='/test'>Bookings</FlatNavLink>
-                    <FlatNavLink href='/test'>Gallery</FlatNavLink>
-                    <FlatNavLink href='/test'>News</FlatNavLink>
-                    <FlatNavLink href='/test'>Our Team</FlatNavLink>
+                    <div className='hidden sm:flex space-x-6'>
+                        <FlatNavLink href='/test'>Bookings</FlatNavLink>
+                        <FlatNavLink href='/test'>Gallery</FlatNavLink>
+                        <FlatNavLink href='/test'>News</FlatNavLink>
+                        <FlatNavLink href='/test'>Our Team</FlatNavLink>
+                    </div>
                 </div>
                 <Divider />
             </ContentContainer>
