@@ -1,6 +1,6 @@
 import Header from 'components/landing/Header'
 import Testimonial from 'components/landing/Testimonial'
-import LandingLayout from 'components/layouts/LandingLayout'
+import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 
 const Landing: NextPageWithLayout = () => {
