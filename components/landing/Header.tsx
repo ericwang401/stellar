@@ -98,23 +98,6 @@ const RocketContainer = styled.div`
     animation-fill-mode: forwards;
 `
 
-const ContentDivider = styled.div`
-height: 600px;
-margin: -20px auto;
-
-&::after {
-    content: '';
-    position: absolute;
-    width: 200%;
-    aspect-ratio: 1 / 0.7;
-    top: 55vh;
-    left: -50%;
-    background: rgb(0, 2, 18);
-    border-radius: 50%;
-    border-top: 1px solid rgba(120, 119, 198, 0.4);
-}
-`
-
 const Header = () => (
     <>
         <StyledHeader>
@@ -122,7 +105,7 @@ const Header = () => (
                 <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
                     <HeaderTextContainer>
                         <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
-                        <Heading className=''>Your next ride is here.</Heading>
+                        <Heading>Your next ride is here.</Heading>
                         <p className='text-accent-300 text-lg mt-6'>
                             You can now embark on a thrilling vacation to the moon. Enjoy beautiful scenery that
                             billions have not yet seen. You can check off your bucket lists and make your wildest dreams
@@ -139,6 +122,20 @@ const Header = () => (
                     </div>
                 </div>
             </ContentContainer>
+
+            <svg
+            className='absolute bottom-0 w-full h-12 text-forergound'
+            viewBox='0 0 60 6'
+            xmlns='http://www.w3.org/2000/svg'
+            preserveAspectRatio='none'
+            fill="currentColor"
+        >
+            <path
+                fillRule='evenodd'
+                clipRule='evenodd'
+                d='M0 0.594177V6H60V0.594177C50.9074 2.13683 40.736 3 30 3C19.264 3 9.09256 2.13683 0 0.594177Z'
+            />
+        </svg>
         </StyledHeader>
     </>
 )
