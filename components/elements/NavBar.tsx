@@ -42,8 +42,10 @@ const NavBar = () => {
     useEffect(() => {
         if (menuOpen) {
           document.body.classList.add('overflow-y-hidden')
+          document.documentElement.classList.add('overflow-y-hidden')
         } else {
           document.body.classList.remove('overflow-y-hidden')
+          document.documentElement.classList.remove('overflow-y-hidden')
         }
       }, [menuOpen])
 
