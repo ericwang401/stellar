@@ -8,16 +8,9 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 const Landing: NextPageWithLayout = () => {
     return (
         <div>
-            <Parallax pages={3}>
-                <ParallaxLayer speed={0.9}>
-                    <Header />
-                </ParallaxLayer>
-
-                <ParallaxLayer offset={0.8} speed={0.7}>
-                    <Testimonial />
-                    <Gallery />
-                </ParallaxLayer>
-            </Parallax>
+            <Header />
+            <Testimonial />
+            <Gallery />
         </div>
     )
 }
