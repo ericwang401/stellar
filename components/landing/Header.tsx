@@ -123,7 +123,7 @@ const Header = () => (
             </ContentContainer>
 
             <svg
-                className='absolute bottom-0 w-full h-12 text-forergound'
+                className='absolute bottom-0 w-full h-12 text-foreground'
                 viewBox='0 0 60 6'
                 xmlns='http://www.w3.org/2000/svg'
                 preserveAspectRatio='none'

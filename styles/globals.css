@@ -29,6 +29,19 @@
     }
 }
 
+
+html, body {
+    min-height: 100%;
+    color-scheme: dark;
+  }
+
+  /*
+html,
+body {
+    min-height: 100vh;
+    height: 100%;
+}*/
+
 html,
 body {
     @apply relative bg-foreground overflow-x-hidden;
@@ -43,5 +56,5 @@ body {
 
 .mobile-menu {
     height: calc(100vh - 48px);
-    @apply fixed w-full bg-accent-800
+    @apply fixed w-full bg-accent-800;
 }
