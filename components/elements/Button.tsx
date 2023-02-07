@@ -16,7 +16,7 @@ const getColorStyles = ({variant, color}: ButtonProps) => {
     }
     switch (color) {
         default:
-            return tw`text-background sm:hover:bg-accent-600 active:bg-transparent sm:active:bg-transparent`
+            return tw`text-background sm:hover:bg-accent-600 active:bg-accent-600 sm:active:bg-transparent`
     }
 }
 

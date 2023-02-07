@@ -29,13 +29,13 @@
     }
 }
 
-
-html, body {
+html,
+body {
     min-height: 100%;
     color-scheme: dark;
-  }
+}
 
-  /*
+/*
 html,
 body {
     min-height: 100vh;
@@ -45,6 +45,10 @@ body {
 html,
 body {
     @apply relative bg-foreground overflow-x-hidden;
+}
+
+button, a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .gradient-text {

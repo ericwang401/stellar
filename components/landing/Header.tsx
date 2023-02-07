@@ -138,7 +138,7 @@ const Header = () => (
                                 Book now
                             </Button>
                             <Button variant='flat' color='accent'>
-                                About us
+                                Learn More
                             </Button>
                         </CTAContainer>
                     </div>

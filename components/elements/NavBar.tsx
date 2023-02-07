@@ -67,11 +67,15 @@ const NavBar = () => {
                                 <FlatNavLink href='/test'>Our Team</FlatNavLink>
                             </div>
                         </div>
-                        <div className='flex space-x-6'>
-                            <FlatNavLink href='/test'>Sign in</FlatNavLink>
-                            <Button className='self-center' variant='solid' color='accent' size='sm'>
-                                Book now
-                            </Button>
+                        <div className='flex'>
+                            <div className='flex space-x-6'>
+                                <FlatNavLink className='!text-sm' href='/test'>
+                                    View Ticket
+                                </FlatNavLink>
+                                <Button className='self-center' variant='solid' color='accent' size='sm'>
+                                    Book now
+                                </Button>
+                            </div>
                             <button className='grid sm:hidden place-items-center h-12 px-3 -mr-3'>
                                 <Bars2Icon onClick={() => setMenuOpen(!menuOpen)} className='h-6 text-white' />
                             </button>
