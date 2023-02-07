@@ -9,7 +9,7 @@ import tw from 'twin.macro'
 
 
 const GalleryGrid = styled.div`
-${tw`grid`}
+${tw`grid absolute`}
 @media (min-width: 397px) {
     gap: 25px 25px;
     grid-template-columns: 253px 392px 201px;
@@ -67,15 +67,27 @@ ${tw`grid`}
 }
 `
 
+const StyledContainer = styled(ContentContainer)`
+height: 374px;
+
+@media (min-width: 397px) {
+    height: 474px;
+}
+
+@media (min-height: 900px) {
+    height: 764px;
+}
+`
+
 const Gallery = () => {
-    return <ContentContainer>
+    return <StyledContainer>
         <GalleryGrid>
                 <Image src={Nebula} alt='A nebula' className='top-left' />
             <Image src={Earth} alt='Earth' className='top-center' />
             <Image src={Astronaut} alt='Astronaut' className='top-right' />
             <Image src={AstronautOnSurfaceOfMoon} alt='Astronaut on surface of moon' className='bottom-left' />
         </GalleryGrid>
-    </ContentContainer>
+    </StyledContainer>
 }
 
 export default Gallery;
