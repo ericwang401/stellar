@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Earth from 'assets/images/earth.jpg';
 import AstronautOnSurfaceOfMoon from 'assets/images/astronaut-on-surface-of-moon.jpg';
 import Astronaut from 'assets/images/astronaut.jpg';
+import RocketLaunching from 'assets/images/rocket-launching.jpg';
 import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
 
@@ -86,6 +87,7 @@ const Gallery = () => {
             <Image src={Earth} alt='Earth' className='top-center' />
             <Image src={Astronaut} alt='Astronaut' className='top-right' />
             <Image src={AstronautOnSurfaceOfMoon} alt='Astronaut on surface of moon' className='bottom-left' />
+            <Image src={RocketLaunching} alt='Rocket Launching' className='bottom-right' />
         </GalleryGrid>
     </StyledContainer>
 }
