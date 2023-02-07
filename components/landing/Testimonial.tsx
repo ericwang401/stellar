@@ -5,21 +5,18 @@ import Image from 'next/image'
 const Testimonial = () => {
     return (
         <ContentContainer includeYPadding>
-            <h2 className='gradient-text font-bold text-4xl text-center'>The Best Breath-Taking Trip I Ever Had.</h2>
+            <h2 className='gradient-text font-bold text-4xl text-center'>Life-Changing Experience with Moon Tour!</h2>
             <figure>
                 <blockquote>
                     <p className='mt-6 max-w-3xl mx-auto text-lg text-center text-accent-300'>
-                        I’ve written a few thousand words on why traditional “semantic class names” are the reason CSS
-                        is hard to maintain, but the truth is you’re never going to believe me until you actually try
-                        it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll
-                        wonder how you ever worked with CSS any other way.
+                    I never thought I'd get the opportunity to visit the moon, but with Stellar, I was able to make that dream a reality. The trip was unlike anything I've ever experienced - from the breathtaking views of Earth to the weightlessness of walking on the lunar surface. I highly recommend this company to anyone looking for an unforgettable journey. Thank you for making my dream come true!
                     </p>
                 </blockquote>
                 <figcaption className='mt-6 flex items-center justify-center space-x-4 text-left'>
                     <Image src={Odelia} alt='Odelia Fan' className='w-14 h-14 rounded-full' />
                     <div>
                         <div className='text-background font-semibold'>Odelia Fan</div>
-                        <div className='text-accent-300 mt-0.5 text-sm'>Adventurist</div>
+                        <div className='text-accent-300 mt-0.5 text-sm'>Traveler</div>
                     </div>
                 </figcaption>
             </figure>

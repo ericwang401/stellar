@@ -40,3 +40,8 @@ body {
     background-clip: text;
     @apply text-transparent;
 }
+
+.mobile-menu {
+    height: calc(100vh - 48px);
+    @apply fixed w-full bg-accent-800
+}

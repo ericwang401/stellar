@@ -1,5 +1,4 @@
 import 'styles/globals.css'
-import GlobalStyles from 'styles/GlobalStyles'
 import type { AppProps } from 'next/app'
 import { Inter } from '@next/font/google'
 import type { ReactElement, ReactNode } from 'react'

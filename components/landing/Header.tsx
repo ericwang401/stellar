@@ -26,26 +26,26 @@ const backgroundClipInAnimation = keyframes`
 const StyledHeader = styled.div`
     ${tw`py-20 sm:py-32 lg:pb-32 xl:pb-36 bg-foreground relative overflow-hidden`}
 
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(${earthFromSpace.src});
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0;
-            animation-name: ${backgroundClipInAnimation};
-            animation-timing-function: ease;
-            animation-delay: 0.3s;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-        }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(${earthFromSpace.src});
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation-name: ${backgroundClipInAnimation};
+        animation-timing-function: ease;
+        animation-delay: 0.3s;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
 `
 
 const TextFadeInUpAnimation = keyframes`
@@ -98,16 +98,17 @@ const RocketContainer = styled.div`
 
 const Header = () => (
     <>
-        <StyledHeader>
+        <StyledHeader className='z-[1]'>
             <ContentContainer>
                 <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
                     <HeaderTextContainer>
                         <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
                         <Heading>Your next ride is here.</Heading>
                         <p className='text-accent-300 text-lg mt-6'>
-                            You can now embark on a thrilling vacation to the moon. Enjoy beautiful scenery that
-                            billions have not yet seen. You can check off your bucket lists and make your wildest dreams
-                            come true. Book your next trip with Stellar.
+                            Stellar is leading the charge in space tourism, offering an incredible opportunity to visit
+                            the moon. Come witness breathtaking views and make memories that will last a lifetime.
+                            Whether it's for adventure or just to check off your bucket list, Stellar will make your
+                            wildest dreams a reality. Book your trip now and join the new era of space exploration!
                         </p>
                     </HeaderTextContainer>
 
@@ -122,18 +123,18 @@ const Header = () => (
             </ContentContainer>
 
             <svg
-            className='absolute bottom-0 w-full h-12 text-forergound'
-            viewBox='0 0 60 6'
-            xmlns='http://www.w3.org/2000/svg'
-            preserveAspectRatio='none'
-            fill="currentColor"
-        >
-            <path
-                fillRule='evenodd'
-                clipRule='evenodd'
-                d='M0 0.594177V6H60V0.594177C50.9074 2.13683 40.736 3 30 3C19.264 3 9.09256 2.13683 0 0.594177Z'
-            />
-        </svg>
+                className='absolute bottom-0 w-full h-12 text-forergound'
+                viewBox='0 0 60 6'
+                xmlns='http://www.w3.org/2000/svg'
+                preserveAspectRatio='none'
+                fill='currentColor'
+            >
+                <path
+                    fillRule='evenodd'
+                    clipRule='evenodd'
+                    d='M0 0.594177V6H60V0.594177C50.9074 2.13683 40.736 3 30 3C19.264 3 9.09256 2.13683 0 0.594177Z'
+                />
+            </svg>
         </StyledHeader>
     </>
 )
