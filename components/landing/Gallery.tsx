@@ -12,8 +12,8 @@ import tw from 'twin.macro'
 const GalleryGrid = styled.div`
 ${tw`grid absolute`}
 gap: 16px 16px;
-grid-template-columns: 253px 392px 201px;
-grid-template-rows: 70px 157px 97px 333px;
+grid-template-columns: 112px 141px 58px 38px;
+grid-template-rows: 107px 87px 125px 185px;
 
 @media (min-width: 397px) {
     gap: 25px 25px;
