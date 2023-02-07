@@ -20,7 +20,7 @@ const Divider = styled.div`
 `
 
 const FlatNavLink = styled(Link)`
-    ${tw`flex items-center h-12 text-sm text-background hover:text-accent-300 transition-colors font-medium text-center`}
+    ${tw`flex items-center h-12 text-sm text-background active:text-accent-300 sm:hover:text-accent-300 transition-colors font-medium text-center`}
 
     @media not all and (min-width: 640px) {
         ${tw`text-base`}
