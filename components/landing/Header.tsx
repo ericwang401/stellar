@@ -107,7 +107,7 @@ const Header = () => (
                         <p className='text-accent-300 text-lg mt-6'>
                             Stellar is leading the charge in space tourism, offering an incredible opportunity to visit
                             the moon. Come witness breathtaking views and make memories that will last a lifetime.
-                            Whether it's for adventure or just to check off your bucket list, Stellar will make your
+                            Whether it&apos;s for adventure or just to check off your bucket list, Stellar will make your
                             wildest dreams a reality. Book your trip now and join the new era of space exploration!
                         </p>
                     </HeaderTextContainer>
