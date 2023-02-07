@@ -31,7 +31,7 @@
 
 html,
 body {
-    @apply bg-foreground overflow-x-hidden;
+    @apply relative bg-foreground overflow-x-hidden;
 }
 
 .gradient-text {
