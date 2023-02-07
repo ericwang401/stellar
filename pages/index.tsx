@@ -4,11 +4,13 @@ import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import Gallery from 'components/landing/Gallery'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import About from 'components/landing/About'
 
 const Landing: NextPageWithLayout = () => {
     return (
         <div>
             <Header />
+            <About />
             <Testimonial />
             <Gallery />
         </div>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Testimonial = () => {
     return (
         <ContentContainer includeYPadding>
-            <h2 className='gradient-text font-bold text-4xl text-center'>Life-Changing Experience with Moon Tour!</h2>
+            <h2 className='gradient-text font-bold text-3xl sm:text-4xl text-center tracking-tight'>Life-Changing Experience with Moon Tour!</h2>
             <figure>
                 <blockquote>
                     <p className='mt-6 max-w-3xl mx-auto text-lg text-center text-accent-300'>

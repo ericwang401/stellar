@@ -4,12 +4,13 @@ import earthFromSpace from 'assets/images/earth-from-space.jpg'
 import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
 import RocketShip from 'assets/images/rocket-ship.png'
+import Button from 'components/elements/Button'
 
 const Heading = styled.h1`
     background: linear-gradient(180deg, #fff, #aaa), #fff;
     -webkit-background-clip: text;
     background-clip: text;
-    ${tw`text-transparent font-bold text-4xl md:text-5xl lg:text-7xl leading-[3rem] lg:leading-[5rem] max-w-lg mt-6`}
+    ${tw`text-transparent font-bold text-4xl md:text-5xl lg:text-7xl tracking-tight leading-[3rem] lg:leading-[5rem] max-w-lg mt-6`}
 `
 
 const backgroundClipInAnimation = keyframes`
@@ -62,8 +63,6 @@ const TextFadeInUpAnimation = keyframes`
 `
 
 const HeaderTextContainer = styled.div`
-    ${tw`relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6`}
-
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     opacity: 0;
     transform: translateY(100px);
@@ -96,21 +95,53 @@ const RocketContainer = styled.div`
     animation-fill-mode: forwards;
 `
 
+const CTAFadeInUpAnimation = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+const CTAContainer = styled.div`
+${tw`flex space-x-3 mt-8 opacity-0`}
+
+animation-name: ${CTAFadeInUpAnimation};
+animation-timing-function: ease;
+animation-delay: 1s;
+animation-duration: 0.6s;
+animation-fill-mode: forwards;
+`
+
 const Header = () => (
     <>
         <StyledHeader className='z-[1]'>
             <ContentContainer>
                 <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
-                    <HeaderTextContainer>
-                        <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
-                        <Heading>Your next ride is here.</Heading>
-                        <p className='text-accent-300 text-lg mt-6'>
-                            Stellar is leading the charge in space tourism, offering an incredible opportunity to visit
-                            the moon. Come witness breathtaking views and make memories that will last a lifetime.
-                            Whether it&apos;s for adventure or just to check off your bucket list, Stellar will make your
-                            wildest dreams a reality. Book your trip now and join the new era of space exploration!
-                        </p>
-                    </HeaderTextContainer>
+                    <div className='relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6'>
+                        <HeaderTextContainer>
+                            <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
+                            <Heading>Your next ride is here.</Heading>
+                            <p className='text-accent-300 text-lg mt-6'>
+                                Stellar is leading the charge in space tourism, offering an incredible opportunity to
+                                visit the moon. Come witness breathtaking views and make memories that will last a
+                                lifetime. Whether it&apos;s for adventure or just to check off your bucket list, Stellar
+                                will make your wildest dreams a reality. Book your trip now and join the new era of
+                                space exploration!
+                            </p>
+                        </HeaderTextContainer>
+                        <CTAContainer>
+                            <Button variant='solid' color='accent'>
+                                Book now
+                            </Button>
+                            <Button variant='flat' color='accent'>
+                                About us
+                            </Button>
+                        </CTAContainer>
+                    </div>
 
                     <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
                         <RocketContainer>
