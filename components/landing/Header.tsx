@@ -134,10 +134,10 @@ const Header = () => (
                             </p>
                         </HeaderTextContainer>
                         <CTAContainer>
-                            <Button variant='solid' color='accent'>
+                            <Button size='xl' variant='solid' color='accent'>
                                 Book now
                             </Button>
-                            <Button variant='flat' color='accent'>
+                            <Button size='xl' variant='flat' color='accent'>
                                 Learn More
                             </Button>
                         </CTAContainer>
