@@ -13,9 +13,9 @@ const Landing: NextPageWithLayout = () => {
         <div>
             <Header />
             <TheTrip />
-            <About />
             <Testimonial />
             <Gallery />
+            <About />
         </div>
     )
 }
