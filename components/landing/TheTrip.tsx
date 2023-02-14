@@ -7,6 +7,7 @@ import { ReactNode } from 'react'
 import { classNames } from 'util/helpers'
 import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
+import Button from 'components/elements/Button'
 
 interface RightBlockProps {
     number?: number
@@ -42,7 +43,7 @@ const LeftBlock = ({ className, children }: LeftBlockProps) => {
 const GradientH3 = styled.h3`
     background: -webkit-linear-gradient(90deg, #0ea5e9, #a855f7);
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     ${tw`font-bold text-2xl`}
 `
 
@@ -158,8 +159,12 @@ const TheTrip = () => {
             </div>
             <div className='text-center mt-4'>
                 <h3 className='font-bold text-2xl text-fuchsia-500'>Lift off</h3>
-                <h2 className='mx-auto gradient-text font-bold text-3xl sm:text-4xl tracking-tight max-w-2xl mt-4'>Enjoy Your Ride</h2>
+                <h2 className='mx-auto gradient-text font-bold text-3xl sm:text-4xl tracking-tight max-w-2xl mt-2'>
+                    Enjoy Your Ride
+                </h2>
             </div>
+
+
         </ContentContainer>
     )
 }

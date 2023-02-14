@@ -7,12 +7,16 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import About from 'components/landing/About'
 import Head from 'next/head'
 import TheTrip from 'components/landing/TheTrip'
+import BookCardCTA from 'components/landing/BookCardCTA'
+import Safety from 'components/landing/Safety'
 
 const Landing: NextPageWithLayout = () => {
     return (
         <div>
             <Header />
             <TheTrip />
+            <Safety />
+            <BookCardCTA />
             <Testimonial />
             <Gallery />
             <About />
