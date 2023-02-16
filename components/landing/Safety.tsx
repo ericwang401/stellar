@@ -36,8 +36,6 @@ const Bar = ({ special, width, label, caption }: BarProps) => {
 const Safety = () => {
     const [progress, setProgress] = useState(0)
 
-
-
     return (
         <div className='relative overflow-hidden'>
             <SectionDivider />
@@ -67,7 +65,13 @@ const Safety = () => {
                         <div className='pt-6 md:p-8 text-center md:text-left space-y-4'>
                             <blockquote>
                                 <p className='max-md:mx-auto text-lg max-w-md font-medium'>
-                                    “I love riding on big rockets that are safe. they make me feel woozy.”
+                                    “Grey Origin was my first experience going to the moon. It was overall ok, but many
+                                    problems arose on the trip (some of which were life-threatening) and the staff was
+                                    not very knowledgeable as to what they were doing. I was too scared to take another
+                                    trip to the moon after that until I heard about Stellar. With a beyond-talented
+                                    staff and refined spacecraft, my worries were gone and now I could go to the moon
+                                    whenever I wanted safely. With my six trips with them, no accidents have occurred
+                                    and I was able to relax and enjoy the view. ”
                                 </p>
                             </blockquote>
                             <figcaption className='font-medium'>
@@ -78,7 +82,7 @@ const Safety = () => {
                     </figure>
                 </div>
 
-                <Parallax onProgressChange={progress => setProgress(progress + .15)}>
+                <Parallax onProgressChange={progress => setProgress(progress + 0.15)}>
                     <div className='flex flex-col gap-6 md:gap-10 mt-24'>
                         <Bar special label='Stellar' width={(5 * progress).toString() + '%'} caption='0 accidents' />
                         <Bar label='NALSA' width={(20 * progress).toString() + '%'} caption='21 accidents' />
