@@ -1,3 +1,4 @@
+import Footer from 'components/elements/Footer'
 import NavBar from 'components/elements/NavBar'
 import { ReactNode } from 'react'
 
@@ -11,7 +12,8 @@ const LandingLayout = ({ children }: Props) => {
             <header className='fixed z-[2000] w-full'>
                 <NavBar />
             </header>
-            <main>{children}</main>
+            <main className='min-h-screen'>{children}</main>
+            <Footer />
         </>
     )
 }

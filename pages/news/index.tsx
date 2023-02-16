@@ -14,7 +14,7 @@ const Card = ({ link, title, author, date }: CardProps) => {
     return (
         <Link href={link} className='rounded-lg border border-accent-700 bg-foreground p-8'>
             <h2 className='font-bold text-2xl sm:text-3xl tracking-tight max-w-2xl'>{title}</h2>
-            <div className='flex space-x-3 mt-16'>
+            <div className='flex flex-col sm:flex-row sm:gap-3 mt-16'>
                 <p className='font-bold text-sm'>{author}</p>
                 <p className='text-accent-300 text-sm'>{date}</p>
             </div>
@@ -31,27 +31,21 @@ const News: NextPageWithLayout = () => {
                 <div className='flex flex-col space-y-6 sm:space-y-8'>
                     <Card
                         link='/news/example'
-                        title="How Albert rejected Cody's feelings and made a huge turn around"
-                        author='Thomas Jefferson'
+                        title="Spying on Foreign Intelligence Using Stellar Ships"
+                        author='John Cabot'
                         date='February 14th, 2023'
                     />
                     <Card
                         link='/news/example'
-                        title="How Albert rejected Cody's feelings and made a huge turn around"
-                        author='Thomas Jefferson'
-                        date='February 14th, 2023'
+                        title="We Are Supporting Ukraine"
+                        author='John Cabot'
+                        date='February 14th, 2021'
                     />
                     <Card
-                        link='/news/example'
-                        title="How Albert rejected Cody's feelings and made a huge turn around"
-                        author='Thomas Jefferson'
-                        date='February 14th, 2023'
-                    />
-                    <Card
-                        link='/news/example'
-                        title="How Albert rejected Cody's feelings and made a huge turn around"
-                        author='Thomas Jefferson'
-                        date='February 14th, 2023'
+                        link='/news/first-successful-rocket-launch'
+                        title="First Successful Rocket Launch"
+                        author='John Cabot'
+                        date='March 14th, 2018'
                     />
                 </div>
             </ContentContainer>
