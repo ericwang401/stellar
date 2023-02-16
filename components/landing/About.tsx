@@ -35,7 +35,7 @@ const About = () => {
                         <Image
                             src={NativeAmericanInFrontOfRocketShip}
                             alt='Native American in front of rocket ship'
-                            className='rounded-xl border border-accent-700 w-full max-w-md'
+                            className='rounded-lg border border-accent-700 w-full max-w-md'
                         />
                     </div>
                 </div>

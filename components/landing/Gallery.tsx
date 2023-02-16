@@ -33,7 +33,7 @@ const GalleryGrid = styled.div`
     }
 
     & img {
-        ${tw`rounded-xl border border-accent-700`}
+        ${tw`rounded-lg border border-accent-700`}
     }
 
     .top-left {

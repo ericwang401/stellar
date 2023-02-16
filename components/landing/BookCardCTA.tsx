@@ -6,7 +6,7 @@ import ContentContainer from 'components/ContentContainer'
 const BookCardCTA = () => {
     return (
         <ContentContainer includeYPadding>
-            <div className='flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-start rounded-3xl border border-accent-700 bg-accent-800  lg:gap-x-20 pb-0 lg:pb-14 pt-14 px-14 w-full relative isolate overflow-hidden'>
+            <div className='flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-start rounded-lg border border-accent-700 bg-accent-800  lg:gap-x-20 pb-0 lg:pb-14 pt-14 px-14 w-full relative isolate overflow-hidden'>
                 <svg
                     viewBox='0 0 1024 1024'
                     className='absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-y-24 lg:-translate-x-1/3'

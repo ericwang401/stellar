@@ -5,6 +5,8 @@ import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
 import RocketShip from 'assets/images/rocket-ship.png'
 import Button from 'components/elements/Button'
+import { useState } from 'react'
+import { Parallax } from 'react-scroll-parallax'
 
 const Heading = styled.h1`
     background: linear-gradient(180deg, #fff, #aaa), #fff;
@@ -107,67 +109,71 @@ const CTAFadeInUpAnimation = keyframes`
 `
 
 const CTAContainer = styled.div`
-${tw`flex space-x-3 mt-8 opacity-0`}
+    ${tw`flex space-x-3 mt-8 opacity-0`}
 
-animation-name: ${CTAFadeInUpAnimation};
-animation-timing-function: ease;
-animation-delay: 1s;
-animation-duration: 0.6s;
-animation-fill-mode: forwards;
+    animation-name: ${CTAFadeInUpAnimation};
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
 `
 
-const Header = () => (
-    <>
-        <StyledHeader className='z-[1]'>
-            <ContentContainer>
-                <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
-                    <div className='relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6'>
-                        <HeaderTextContainer>
-                            <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
-                            <Heading>Your next ride is here.</Heading>
-                            <p className='text-accent-300 text-lg mt-6'>
-                                Stellar is leading the charge in space tourism, offering an incredible opportunity to
-                                visit the moon. Come witness breathtaking views and make memories that will last a
-                                lifetime. Whether it&apos;s for adventure or just to check off your bucket list, Stellar
-                                will make your wildest dreams a reality. Book your trip now and join the new era of
-                                space exploration!
-                            </p>
-                        </HeaderTextContainer>
-                        <CTAContainer>
-                            <Button size='xl' variant='solid' color='accent'>
-                                Book now
-                            </Button>
-                            <Button size='xl' variant='flat' color='accent'>
-                                Learn More
-                            </Button>
-                        </CTAContainer>
-                    </div>
+const Header = () => {
+    const [progress, setProgress] = useState(0)
 
-                    <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
-                        <RocketContainer>
-                            <div className='relative aspect-[366/729] mx-auto max-w-[366px]'>
-                                <Image src={RocketShip} alt='rocket ship' />
-                            </div>
-                        </RocketContainer>
-                    </div>
-                </div>
-            </ContentContainer>
+    return (
+        <Parallax onProgressChange={progress => setProgress(progress)}>
+            <StyledHeader className='z-[1]'>
+                <ContentContainer>
+                    <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
+                        <div className='relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6'>
+                            <HeaderTextContainer>
+                                <p className='tracking-widest text-sm uppercase text-accent-300 font-medium'>STELLAR</p>
+                                <Heading>Your next ride is here.</Heading>
+                                <p className='text-accent-300 text-lg mt-6'>
+                                    Stellar is leading the charge in space tourism, offering an incredible opportunity
+                                    to visit the moon. Come witness breathtaking views and make memories that will last
+                                    a lifetime. Whether it&apos;s for adventure or just to check off your bucket list,
+                                    Stellar will make your wildest dreams a reality. Book your trip now and join the new
+                                    era of space exploration!
+                                </p>
+                            </HeaderTextContainer>
+                            <CTAContainer>
+                                <Button size='xl' variant='solid' color='accent'>
+                                    Book now
+                                </Button>
+                                <Button size='xl' variant='flat' color='accent'>
+                                    Learn More
+                                </Button>
+                            </CTAContainer>
+                        </div>
 
-            <svg
-                className='absolute bottom-0 w-full h-12 text-foreground'
-                viewBox='0 0 60 6'
-                xmlns='http://www.w3.org/2000/svg'
-                preserveAspectRatio='none'
-                fill='currentColor'
-            >
-                <path
-                    fillRule='evenodd'
-                    clipRule='evenodd'
-                    d='M0 0.594177V6H60V0.594177C50.9074 2.13683 40.736 3 30 3C19.264 3 9.09256 2.13683 0 0.594177Z'
-                />
-            </svg>
-        </StyledHeader>
-    </>
-)
+                        <div className='relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6'>
+                            <RocketContainer>
+                                <div className='relative aspect-[366/729] mx-auto max-w-[366px]'>
+                                    <Image src={RocketShip} alt='rocket ship' style={{transform: `translateY(${8*progress}rem)`}} />
+                                </div>
+                            </RocketContainer>
+                        </div>
+                    </div>
+                </ContentContainer>
+
+                <svg
+                    className='absolute bottom-0 w-full h-12 text-foreground'
+                    viewBox='0 0 60 6'
+                    xmlns='http://www.w3.org/2000/svg'
+                    preserveAspectRatio='none'
+                    fill='currentColor'
+                >
+                    <path
+                        fillRule='evenodd'
+                        clipRule='evenodd'
+                        d='M0 0.594177V6H60V0.594177C50.9074 2.13683 40.736 3 30 3C19.264 3 9.09256 2.13683 0 0.594177Z'
+                    />
+                </svg>
+            </StyledHeader>
+        </Parallax>
+    )
+}
 
 export default Header

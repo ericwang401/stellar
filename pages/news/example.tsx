@@ -21,7 +21,7 @@ const Example: NextPageWithLayout = () => {
                     How We Are Extorting Roblox Out of Millions of Robux
                 </h1>
                 <Image
-                    className='rounded-xl border border-accent-700 max-w-2xl w-full mt-4 sm:mt-12'
+                    className='rounded-lg border border-accent-700 max-w-2xl w-full mt-4 sm:mt-12'
                     src={RobuxBackground}
                     alt='robux'
                 />

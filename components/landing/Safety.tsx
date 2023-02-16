@@ -56,7 +56,7 @@ const Safety = () => {
                         </p>
                     </div>
 
-                    <figure className='md:flex bg-accent-800 rounded-3xl border border-accent-700 p-8 md:p-0 overflow-hidden w-full lg:max-w-2xl'>
+                    <figure className='md:flex bg-accent-800 rounded-lg border border-accent-700 p-8 md:p-0 overflow-hidden w-full lg:max-w-2xl'>
                         <Image
                             className='relative w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full max-md:mx-auto'
                             src={Sheng}

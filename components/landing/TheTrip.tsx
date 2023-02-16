@@ -18,7 +18,7 @@ interface RightBlockProps {
 const RightBlock = ({ number, title, description, className }: RightBlockProps) => {
     return (
         <div className={classNames('flex flex-col items-center lg:items-start mt-8 lg:mt-0', className)}>
-            <div className='grid place-items-center h-10 w-10 rounded bg-accent-800 mb-4'>
+            <div className='grid place-items-center h-10 w-10 rounded-lg bg-accent-800 mb-4'>
                 <h3 className='text-xl text-accent-300'>{number}</h3>
             </div>
             <p className='text-background font-semibold text-2xl'>{title}</p>
@@ -91,7 +91,7 @@ const TheTrip = () => {
                             <Image
                                 src={Sheng}
                                 alt='Albert sheng'
-                                className='rounded-xl border border-accent-700 w-full max-w-md'
+                                className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
                         </LeftBlock>
                     }
@@ -100,7 +100,7 @@ const TheTrip = () => {
                             className='lg:-translate-y-16'
                             number={2}
                             title='Get Trained'
-                            description='albert sheng loves men.'
+                            description='Our training starts at home with quick but effective online courses to inform and prepare you for your voyage. Next will be the in-person training, at one of our many facilities around the America. Our training is fit to the needs and handicaps of most people. Training will not be a challenge to pass but rather just further assist you in preparation.'
                         />
                     }
                 />
@@ -112,7 +112,7 @@ const TheTrip = () => {
                             <Image
                                 src={Sheng}
                                 alt='Albert sheng'
-                                className='rounded-xl border border-accent-700 w-full max-w-md'
+                                className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
                         </LeftBlock>
                     }
@@ -121,7 +121,7 @@ const TheTrip = () => {
                             className='lg:-translate-y-16'
                             number={3}
                             title='Check-In'
-                            description='albert sheng loves men.'
+                            description='Similar to boarding an airplane, be sure to have all documents needed for boarding and prepare for a TSA security check to ensure safety on the trip. We have many shops and restaurants in our facility while you wait for your expedition to begin.                            '
                         />
                     }
                 />
@@ -135,7 +135,7 @@ const TheTrip = () => {
                             <Image
                                 src={Sheng}
                                 alt='Board'
-                                className='rounded-xl border border-accent-700 w-full max-w-md'
+                                className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
                         </LeftBlock>
                     }
@@ -143,8 +143,8 @@ const TheTrip = () => {
                         <RightBlock
                             className='lg:-translate-y-16'
                             number={4}
-                            title='Get Trained'
-                            description='albert sheng loves men.'
+                            title='Boarding'
+                            description='At this point, you will finally make it onto one of our fine spacecraft. Maximized in both functionality and luxury, the Stellar Jupyter spacecraft will be a great dwelling equal to that of high-end hotels. Each passenger has their own room fit with furniture and room for luggage.'
                         />
                     }
                 />
