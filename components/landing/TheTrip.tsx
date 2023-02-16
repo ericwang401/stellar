@@ -67,7 +67,7 @@ const TheTrip = () => {
                         <LeftBlock className='lg:-translate-y-16'>
                             <div className='grid place-items-center h-36 w-full max-w-[20rem] border border-accent-600 rounded-lg'>
                                 <div className='relative px-5 py-3 text-base text-background bg-accent-700 rounded-lg max-w-min'>
-                                    <span>Purchase</span>
+                                    <span>Register</span>
 
                                     <CursorArrowRays className='absolute w-8 h-8 text-background -right-2 -bottom-2' />
                                 </div>
@@ -78,9 +78,8 @@ const TheTrip = () => {
                         <RightBlock
                             className='lg:-translate-y-16'
                             number={1}
-                            title='Book a Trip'
-                            description='Book your trip to the moon with Stellar. We offer a variety of packages to suit your
-                            needs, and our friendly staff is always available to answer any questions you may have.'
+                            title='Registration'
+                            description='A medical form will need to be filled out to help determine whether you are eligible for a trip with us. We are known for being friendly for a variety of conditions and continually working on allowing everyone to go to the moon. A waiver will need to filled out alongside this medical form. '
                         />
                     }
                 />
