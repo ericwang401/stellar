@@ -81,7 +81,7 @@ const Safety = () => {
                     </figure>
                 </div>
 
-                <Parallax onProgressChange={progress => progress < 0.4 ? setProgress((progress * 1.7) + 0.3) : null}>
+                <Parallax onProgressChange={progress => progress < 0.4 ? setProgress((progress * 1.7) + 0.3) : setProgress((0.4 * 1.7) + 0.3)}>
                     <div className='flex flex-col gap-6 md:gap-10 mt-24'>
                         <Bar special label='Stellar' width={(5 * progress).toString() + '%'} caption='0 accidents' />
                         <Bar label='NALSA' width={(20 * progress).toString() + '%'} caption='21 accidents' />
