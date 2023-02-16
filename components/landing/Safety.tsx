@@ -49,8 +49,10 @@ const Safety = () => {
                             Stellar Safety Record
                         </p>
                         <p className='mt-4 max-w-2xl text-accent-300'>
-                            Safety is numero 3. cody likes mazie. cody likes mazie. cody likes mazie. cody likes mazie.
-                            cody likes
+                            Safety is our #1 priority when it comes to Stellar. We want the journey to the moon to be
+                            nothing but stunning for our guests. With a crew equipped for any situation, surplus tools
+                            and supplies, and even our innovatively advanced escape pods for unlikely emergencies, our
+                            expectations excel far past the guidelines of the U.S. Ministry of Transportation.
                         </p>
                     </div>
 
@@ -65,24 +67,21 @@ const Safety = () => {
                         <div className='pt-6 md:p-8 text-center md:text-left space-y-4'>
                             <blockquote>
                                 <p className='max-md:mx-auto text-lg max-w-md font-medium'>
-                                    “Grey Origin was my first experience going to the moon. It was overall ok, but many
-                                    problems arose on the trip (some of which were life-threatening) and the staff was
-                                    not very knowledgeable as to what they were doing. I was too scared to take another
-                                    trip to the moon after that until I heard about Stellar. With a beyond-talented
-                                    staff and refined spacecraft, my worries were gone and now I could go to the moon
-                                    whenever I wanted safely. With my six trips with them, no accidents have occurred
-                                    and I was able to relax and enjoy the view. ”
+                                    “Grey Origin was my first experience going to the moon. There were many problems and
+                                    poorly trained staff. But with
+                                    Stellar, their exceptional staff and quality eased my worries and now I have gone
+                                    six trips with no issues.”
                                 </p>
                             </blockquote>
                             <figcaption className='font-medium'>
                                 <div className='text-fuchsia-500 '>Albert Sheng</div>
-                                <div className='text-accent-300'>U.S. Ministry of Safe Transportation</div>
+                                <div className='text-accent-300'>U.S. Ministry of Transportation</div>
                             </figcaption>
                         </div>
                     </figure>
                 </div>
 
-                <Parallax onProgressChange={progress => setProgress(progress + 0.15)}>
+                <Parallax onProgressChange={progress => progress < 0.4 ? setProgress((progress * 1.7) + 0.3) : null}>
                     <div className='flex flex-col gap-6 md:gap-10 mt-24'>
                         <Bar special label='Stellar' width={(5 * progress).toString() + '%'} caption='0 accidents' />
                         <Bar label='NALSA' width={(20 * progress).toString() + '%'} caption='21 accidents' />

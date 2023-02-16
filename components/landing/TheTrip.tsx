@@ -121,7 +121,7 @@ const TheTrip = () => {
                         <RightBlock
                             className='lg:-translate-y-16'
                             number={3}
-                            title='Get Trained'
+                            title='Check-In'
                             description='albert sheng loves men.'
                         />
                     }
@@ -135,7 +135,7 @@ const TheTrip = () => {
                         <LeftBlock className='lg:-translate-y-36'>
                             <Image
                                 src={Sheng}
-                                alt='Albert sheng'
+                                alt='Board'
                                 className='rounded-xl border border-accent-700 w-full max-w-md'
                             />
                         </LeftBlock>
