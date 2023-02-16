@@ -26,7 +26,7 @@ const TimelineBlock = ({ left, right, capEnd, line, noGradientLineOnMobile, clas
                 <div className='lg:pr-12 w-full relative'>{left}</div>
             </div>
             <div className='flex flex-col items-center'>
-                { !noGradientLineOnMobile && <div className='h-14 w-[1px] bg-gradient-to-b from-transparent to-accent-600 lg:hidden' /> }
+                { !noGradientLineOnMobile && <div className='h-28 w-[1px] bg-gradient-to-b from-transparent to-accent-600 lg:hidden' /> }
                 <Dot />
                 {line ? line : <Line />}
                 {capEnd && <Dot />}
