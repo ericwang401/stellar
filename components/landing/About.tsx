@@ -2,15 +2,12 @@ import ContentContainer from 'components/ContentContainer'
 import Button from 'components/elements/Button'
 import Image from 'next/image'
 import NativeAmericanInFrontOfRocketShip from 'assets/images/native-american-in-front-of-rocket-ship.png'
+import SectionDivider from 'components/elements/SectionDivider'
 
 const About = () => {
     return (
         <div className='relative overflow-hidden'>
-            <div>
-                <div className='absolute w-[60vw] h-[260px] -mt-52 -left-48 rounded-full blur-[50px] bg-gradient-to-r from-sky-500 to-purple-500 opacity-[0.15] mix-blend-normal' />
-                <div className='absolute w-[60vw] h-[260px] -mt-52 -right-48 rounded-full blur-[50px] bg-gradient-to-r from-fuchsia-500 to-pink-500 opacity-[0.15] mix-blend-normal' />
-                <div className='w-full h-[1px] bg-gradient-to-r from-sky-500 to-pink-500 opacity-25' />
-            </div>
+            <SectionDivider />
             <ContentContainer includeYPadding>
                 <div className='flex flex-col lg:flex-row justify-between gap-16'>
                     <div>

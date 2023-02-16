@@ -61,20 +61,21 @@ const NavBar = () => {
                                 <span className='text-white font-mediu'>Stellar</span>
                             </Link>
                             <div className='hidden sm:flex space-x-6'>
-                                <FlatNavLink href='/test'>Bookings</FlatNavLink>
-                                <FlatNavLink href='/test'>Gallery</FlatNavLink>
-                                <FlatNavLink href='/test'>News</FlatNavLink>
-                                <FlatNavLink href='/test'>Our Team</FlatNavLink>
+                                <FlatNavLink href='/bookings'>Bookings</FlatNavLink>
+                                <FlatNavLink href='/news'>News</FlatNavLink>
+                                <FlatNavLink href='/about-us'>About Us</FlatNavLink>
                             </div>
                         </div>
                         <div className='flex'>
                             <div className='flex space-x-6'>
-                                <FlatNavLink className='!text-sm' href='/test'>
+                                {/* <FlatNavLink className='!text-sm' href='/test'>
                                     View Ticket
-                                </FlatNavLink>
-                                <Button className='self-center' variant='solid' color='accent' size='sm'>
-                                    Book now
-                                </Button>
+                                </FlatNavLink> */}
+                                <Link href='/bookings' className='self-center'>
+                                    <Button as='span' variant='solid' color='accent' size='sm'>
+                                        Book now
+                                    </Button>
+                                </Link>
                             </div>
                             <button className='grid sm:hidden place-items-center h-12 px-3 -mr-3'>
                                 <Bars2Icon onClick={() => setMenuOpen(!menuOpen)} className='h-6 text-white' />
@@ -95,10 +96,9 @@ const NavBar = () => {
                 leaveTo='opacity-0 translate-y-[5vh]'
             >
                 <ContentContainer>
-                    <FlatNavLink href='/test'>Bookings</FlatNavLink>
-                    <FlatNavLink href='/test'>Gallery</FlatNavLink>
-                    <FlatNavLink href='/test'>News</FlatNavLink>
-                    <FlatNavLink href='/test'>Our Team</FlatNavLink>
+                    <FlatNavLink href='/bookings'>Bookings</FlatNavLink>
+                    <FlatNavLink href='/news'>News</FlatNavLink>
+                    <FlatNavLink href='/about-us'>About Us</FlatNavLink>
                 </ContentContainer>
             </Transition>
         </nav>
