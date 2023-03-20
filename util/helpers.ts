@@ -105,3 +105,8 @@ export const hexToRgba = (hex: string, alpha = 1): string => {
 export const classNames = (...classes: (string | undefined | null)[]) => {
   return classes.filter(Boolean).join(' ')
 }
+
+// add commas to numbers
+export const formatNumber = (num: number) => {
+  return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+}

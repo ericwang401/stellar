@@ -4,16 +4,17 @@ import { ReactNode } from 'react'
 
 interface Props {
     children?: ReactNode
+    showFooter?: boolean
 }
 
-const LandingLayout = ({ children }: Props) => {
+const LandingLayout = ({ children, showFooter = true }: Props) => {
     return (
         <>
             <header className='fixed z-[2000] w-full'>
                 <NavBar />
             </header>
             <main className='min-h-screen'>{children}</main>
-            <Footer />
+            {showFooter && <Footer />}
         </>
     )
 }
