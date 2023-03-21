@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import tw from 'twin.macro';
+import styled, { css } from 'styled-components'
+import tw from 'twin.macro'
 
 export interface ButtonProps {
     variant?: 'flat' | 'outline' | 'solid'
@@ -7,11 +7,11 @@ export interface ButtonProps {
     color?: 'accent'
 }
 
-const getColorStyles = ({variant, color}: ButtonProps) => {
+const getColorStyles = ({ variant, color }: ButtonProps) => {
     if (variant === 'solid') {
         switch (color) {
             default:
-                return tw`text-foreground bg-accent-200 sm:hover:bg-background ring-accent-400 ring-0 active:ring-[3px]  active:bg-accent-100 sm:active:bg-accent-100`
+                return tw`text-foreground bg-accent-200 sm:hover:bg-background ring-accent-400 ring-0 active:ring-[3px] active:bg-accent-100 sm:active:bg-accent-100 disabled:!bg-accent-400 disabled:!ring-0`
         }
     }
     switch (color) {
@@ -20,7 +20,7 @@ const getColorStyles = ({variant, color}: ButtonProps) => {
     }
 }
 
-const getSizeStyles = ({size}: ButtonProps) => {
+const getSizeStyles = ({ size }: ButtonProps) => {
     switch (size) {
         case 'sm':
             return tw`px-3.5 py-2 text-sm`
@@ -36,15 +36,21 @@ const getSizeStyles = ({size}: ButtonProps) => {
 }
 
 const Button = styled.button<ButtonProps>`
-${tw`font-semibold rounded-lg`}
+    ${tw`font-semibold rounded-lg`}
 
-transition-property: color, background-color, border-color, box-shadow,
+    transition-property: color, background-color, border-color, box-shadow,
 text-decoration-color, fill, stroke;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
 
-${(props) => css`${getSizeStyles(props)}`}
-${(props) => css`${getColorStyles(props)}`}
+    ${props =>
+        css`
+            ${getSizeStyles(props)}
+        `}
+    ${props =>
+        css`
+            ${getColorStyles(props)}
+        `}
 `
 
 export default Button

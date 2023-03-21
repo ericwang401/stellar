@@ -7,6 +7,7 @@ import RocketShip from 'assets/images/rocket-ship.png'
 import Button from 'components/elements/Button'
 import { useState } from 'react'
 import { Parallax } from 'react-scroll-parallax'
+import Link from 'next/link'
 
 const Heading = styled.h1`
     background: linear-gradient(180deg, #fff, #aaa), #fff;
@@ -139,12 +140,18 @@ const Header = () => {
                                 </p>
                             </HeaderTextContainer>
                             <CTAContainer>
-                                <Button size='xl' variant='solid' color='accent'>
+
+                            <Link href='/bookings'>
+                                <Button as='span' size='xl' variant='solid' color='accent'>
                                     Book now
                                 </Button>
-                                <Button size='xl' variant='flat' color='accent'>
+                            </Link>
+
+                            <Link href='/about-us'>
+                                <Button as='span' size='xl' variant='flat' color='accent'>
                                     Learn More
                                 </Button>
+                            </Link>
                             </CTAContainer>
                         </div>
 
