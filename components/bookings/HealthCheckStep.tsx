@@ -18,7 +18,7 @@ const HealthCheckStep = () => {
                 setConnecting(false)
                 setConnected(true)
 
-                const tasksToAdd = ['Weight', 'Height', 'Vision Check', 'Height', 'Medical History']
+                const tasksToAdd = ['Weight', 'Height', 'Vision Check', 'Hearing Check', 'Medical History']
 
                 // add tasks one by one with a delay to simulate a real connection and setDone after all tasks are added
                 tasksToAdd.forEach((task, index) => {
