@@ -27,7 +27,7 @@ const HealthCheckStep = () => {
                         if (index === tasksToAdd.length - 1) {
                             setTimeout(() => {
                                 setDone(true)
-                            }, 1000)
+                            }, 2000)
                         }
                     }, 1700 * (index + 1))
                 })
