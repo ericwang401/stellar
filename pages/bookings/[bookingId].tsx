@@ -52,7 +52,7 @@ const Booking: NextPageWithLayout = () => {
     return (
         <BookingContainer>
             <BookingContext.Provider value={{booking}}>
-                <div className='flex flex-col md:grid grid-cols-2 z-[1] md:gap-20 lg:gap-40 max-w-5xl w-full'>
+                <div className='flex flex-col md:grid grid-cols-2 z-[1] md:gap-20 lg:gap-40 max-w-5xl w-full md:py-32'>
                     {!booking && (
                         <div className='h-screen grid place-items-center'>
                             <Spinner size='large' />
