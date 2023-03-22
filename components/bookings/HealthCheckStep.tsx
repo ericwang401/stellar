@@ -2,11 +2,13 @@ import Image from 'next/image'
 import NeuralinkImage from 'assets/images/neuralink.svg'
 import Button from 'components/elements/Button'
 import Spinner from 'components/elements/Spinner'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import EKG from 'components/elements/EKG'
 import { classNames } from 'util/helpers'
+import { BookingContext } from 'pages/bookings/[bookingId]'
 
 const HealthCheckStep = () => {
+    const {setStep} = useContext(BookingContext)
     const [connecting, setConnecting] = useState(false)
     const [connected, setConnected] = useState(false)
     const [done, setDone] = useState(false)
@@ -34,6 +36,10 @@ const HealthCheckStep = () => {
             }, 3000)
         }
     }, [connecting])
+
+    const nextStep = () => {
+        setStep('payment')
+    }
 
     return (
         <>
@@ -83,7 +89,7 @@ const HealthCheckStep = () => {
             {done && (
                 <div className='flex flex-col gap-8 mt-8'>
                     <p className='text-accent-400 text-sm'>🎉 Congratulations! You passed the health check.</p>
-                    <Button size='xl' variant='solid' color='accent'>
+                    <Button size='xl' variant='solid' color='accent' onClick={nextStep}>
                         Continue to Payment
                     </Button>
                 </div>

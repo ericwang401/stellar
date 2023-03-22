@@ -84,7 +84,7 @@ const BookingCard = ({ booking: { startingDate: startTime, endingDate: endTime, 
 }
 
 const SpinnerContainer = styled.div`
-    ${tw`grid place-items-center h-[20vh] absolute w-full`}
+    ${tw`grid place-items-center h-[20vh] absolute inset-x-0`}
     animation-name: ${HideAnimation};
     animation-timing-function: ease;
     animation-fill-mode: forwards;

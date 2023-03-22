@@ -23,20 +23,26 @@ const BookingContainer = styled.div`
     }
 `
 
+export type Step = 'health_check' | 'payment' | 'confirmation'
+
 export const BookingContext = createContext<{
     booking: BookingType | null
+    step: Step
+    setStep: (step: Step) => void
 }>({
     booking: null,
+    step: 'health_check',
+    setStep: () => {},
 })
 
 const Booking: NextPageWithLayout = () => {
     const router = useRouter()
     const { bookingId } = router.query
     const [booking, setBooking] = useState<BookingType | null>(null)
+    const [step, setStep] = useState<Step>('health_check')
 
     useEffect(() => {
         if (bookingId !== undefined) {
-            // find the booking from the id (ex: "stillwater-13463")
             const location = (bookingId as string).split('-')[0].toLowerCase()
             const price = parseInt((bookingId as string).split('-')[1].toLowerCase())
             const foundBooking = locations
@@ -51,10 +57,10 @@ const Booking: NextPageWithLayout = () => {
 
     return (
         <BookingContainer>
-            <BookingContext.Provider value={{booking}}>
+            <BookingContext.Provider value={{booking, step, setStep}}>
                 <div className='flex flex-col md:grid grid-cols-2 z-[1] md:gap-20 lg:gap-40 max-w-5xl w-full md:py-32'>
                     {!booking && (
-                        <div className='h-screen grid place-items-center'>
+                        <div className='h-screen md:h-[50vh] grid place-items-center'>
                             <Spinner size='large' />
                         </div>
                     )}

@@ -1,5 +1,9 @@
+import ConfirmationStep from 'components/bookings/ConfirmationStep';
 import HealthCheckStep from 'components/bookings/HealthCheckStep';
 import { Container } from 'components/bookings/LeftSideContainer';
+import PaymentStep from 'components/bookings/PaymentStep';
+import { BookingContext } from 'pages/bookings/[bookingId]';
+import { useContext } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { FadeInLeftAnimation, FadeInUpAnimation } from 'util/transitions';
@@ -15,10 +19,12 @@ animation-name: ${FadeInUpAnimation};
 `
 
 const RightSideContainer = () => {
+    const { step } = useContext(BookingContext)
+
     return <RightContainer>
-        <HealthCheckStep />
-
-
+        { step === 'health_check' && <HealthCheckStep />}
+        { step === 'payment' && <PaymentStep />}
+        { step === 'confirmation' && <ConfirmationStep />}
     </RightContainer>
 }
 
