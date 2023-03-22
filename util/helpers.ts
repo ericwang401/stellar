@@ -102,12 +102,15 @@ export const formatNumber = (num: number) => {
 // dec2hex :: Integer -> String
 // i.e. 0-255 -> '00'-'ff'
 export const dec2hex = (dec: number): string => {
-  return dec.toString(16).padStart(2, "0")
+    return dec.toString(16).padStart(2, '0')
 }
 
 // generateId :: Integer -> String
 export const generateId = (len?: number): string => {
-  var arr = new Uint8Array((len || 40) / 2)
-  window.crypto.getRandomValues(arr)
-  return Array.from(arr, dec2hex).join('')
+    if (typeof window !== 'undefined') {
+        var arr = new Uint8Array((len || 40) / 2)
+        window.crypto.getRandomValues(arr)
+        return Array.from(arr, dec2hex).join('')
+    }
+    return ''
 }
