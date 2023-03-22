@@ -32,7 +32,7 @@ interface LeftBlockProps {
     children: ReactNode
 }
 
-const LeftBlock = ({ className, children }: LeftBlockProps) => {
+export const LeftBlock = ({ className, children }: LeftBlockProps) => {
     return (
         <div className={classNames('flex w-full justify-center lg:justify-end mt-8 lg:mt-0', className)}>
             {children}

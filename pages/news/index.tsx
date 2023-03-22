@@ -45,7 +45,7 @@ const News: NextPageWithLayout = () => {
                         link='/news/first-successful-rocket-launch'
                         title="First Successful Rocket Launch"
                         author='John Cabot'
-                        date='March 14th, 2018'
+                        date='March 14th, 1998'
                     />
                 </div>
             </ContentContainer>

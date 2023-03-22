@@ -110,8 +110,7 @@ const Bookings: NextPageWithLayout = () => {
                 <h1 className='font-semibold text-3xl pb-4 tracking-tight'>Book Your Next Trip</h1>
                 <h2 className='text-xl pb-8'>Available Bookings</h2>
                 <MessageBox type='warning' title='Limited Bookings' className='mb-4'>
-                    Due to recent foreign objects in U.S. airspace, travel has been limited. We are trying our best to
-                    scale up our operations.
+                    Due to recent debris in space, bookings have been limited. We are trying our best to scale up our operations.
                 </MessageBox>
                 <SpinnerContainer>
                     <Spinner size='large' />

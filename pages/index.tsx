@@ -19,7 +19,6 @@ const Landing: NextPageWithLayout = () => {
             <BookCardCTA />
             <Testimonial />
             <Gallery />
-            <About />
         </div>
     )
 }

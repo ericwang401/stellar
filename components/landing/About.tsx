@@ -25,11 +25,6 @@ const About = () => {
                             to call Oklahoma our home as we lead the charge in this exciting new era of space
                             exploration.
                         </p>
-                        <div className='mt-8'>
-                            <Button variant='solid' color='accent'>
-                                Learn More
-                            </Button>
-                        </div>
                     </div>
                     <div>
                         <Image

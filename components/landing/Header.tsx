@@ -9,7 +9,7 @@ import { useState } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import Link from 'next/link'
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
     background: linear-gradient(180deg, #fff, #aaa), #fff;
     -webkit-background-clip: text;
     background-clip: text;
