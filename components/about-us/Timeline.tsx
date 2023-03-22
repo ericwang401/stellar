@@ -6,6 +6,9 @@ import Image from 'next/image'
 import { ReactNode } from 'react'
 import { classNames } from 'util/helpers'
 import Sheng from 'assets/images/sheng.jpg'
+import KennedySpaceCenterLiftoff from 'assets/images/kennedy-space-center-liftoff.jpg'
+import styled from 'styled-components'
+import tw from 'twin.macro'
 
 interface RightBlockProps {
     title?: ReactNode
@@ -21,11 +24,28 @@ const RightBlock = ({ title, description, className }: RightBlockProps) => {
     )
 }
 
+const BannerContainer = styled.div`
+    ${tw`mt-16 z-0 h-[40rem] relative`}
+    &:before {
+        content: '';
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 100%);
+        ${tw`absolute top-0 left-0 w-full h-[10rem] z-[1]`}
+    }
+
+    & > div {
+        ${tw`h-full w-full`}
+        background-image: url(${KennedySpaceCenterLiftoff.src});
+        background-size: cover;
+        background-position: top;
+        filter: brightness(70%);
+    }
+`
+
 const Timeline = () => {
     return (
         <div className='relative overflow-hidden'>
             <SectionDivider />
-            <ContentContainer includeYPadding>
+            <ContentContainer className='pt-32'>
                 <div className='flex justify-center h-28 w-full'>
                     <div className='h-full w-[1px] bg-gradient-to-b from-transparent to-accent-600' />
                 </div>
@@ -118,13 +138,17 @@ const Timeline = () => {
                 <div className='grid place-items-center mx-auto w-10 h-10 bg-gradient-to-r from-red-500 to-orange-500 rounded-full'>
                     <h3 className='text-foreground font-bold'>5</h3>
                 </div>
-                <div className='text-center mt-4'>
+                <div className='relative text-center mt-4 z-[1]'>
                     <h3 className='font-bold text-2xl text-orange-500'>2013</h3>
                     <h2 className='mx-auto gradient-text font-bold text-3xl sm:text-4xl tracking-tight max-w-2xl mt-2'>
                         Stellar Opens up to the Public
                     </h2>
+                    <p className='text-accent-300 text-lg max-w-2xl mt-12 text-center mx-auto'>albert xi huan bing chiling. Ta ye xi huan Cody</p>
                 </div>
             </ContentContainer>
+            <BannerContainer>
+                <div />
+            </BannerContainer>
         </div>
     )
 }

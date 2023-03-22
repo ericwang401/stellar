@@ -4,6 +4,7 @@ import { NextPageWithLayout } from 'pages/_app'
 import Hero from 'components/about-us/Hero'
 import About from 'components/landing/About'
 import Timeline from 'components/about-us/Timeline'
+import ContactUs from 'components/about-us/ContactUs'
 
 
 const AboutUs: NextPageWithLayout = () => {
@@ -14,6 +15,8 @@ const AboutUs: NextPageWithLayout = () => {
             <About />
 
             <Timeline />
+
+            <ContactUs />
         </div>
     )
 }
