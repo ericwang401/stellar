@@ -9,7 +9,7 @@ import Sheng from 'assets/images/sheng.jpg'
 import KennedySpaceCenterLiftoff from 'assets/images/kennedy-space-center-liftoff.jpg'
 import styled from 'styled-components'
 import tw from 'twin.macro'
-import FirstMoonLanding from 'assets/images/first-moon-landing.jpg'
+import FirstMoonLanding from 'assets/images/first-moon-landing.png'
 import SpaceRaceBegins from 'assets/images/space-race-begins.jpg'
 
 interface RightBlockProps {
