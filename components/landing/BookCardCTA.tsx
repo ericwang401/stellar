@@ -2,6 +2,8 @@ import Button from 'components/elements/Button'
 import Image from 'next/image'
 import Sheng from 'assets/images/sheng.jpg'
 import ContentContainer from 'components/ContentContainer'
+import Link from 'next/link'
+import Ticket from 'assets/images/ticket.png'
 
 const BookCardCTA = () => {
     return (
@@ -31,18 +33,26 @@ const BookCardCTA = () => {
                         Ready to Book a Ticket?
                     </h2>
                     <p className='text-accent-300 text-lg mt-6 max-w-lg '>
-                        Albert loves cody. However cody couldn't reciprocate his feelings. Albert is a very nice person
-                        and doesn't raise any further confrontation.
+                        Are you ready for the ultimate adventure? Whether you're a seasoned space enthusiast or a
+                        first-time adventurer, we have something for everyone. So, why wait? Book your space travel ticket today
+                        and join us on an unforgettable journey to the final frontier. It's time to reach for the stars
+                        and explore the vast unknown. We can't wait to have you on board!
                     </p>
                     <div className='mt-10'>
-                        <Button variant='solid' size='lg'>
-                            Book now
-                        </Button>
+                        <Link href='/bookings'>
+                            <Button as='span' variant='solid' size='lg'>
+                                Book now
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 
                 <div className='h-80 mt-16 self-start lg:self-auto relative'>
-                    <Image src={Sheng} alt='Sheng' className='absolute rounded-l-3xl max-w-2xl md:max-w-4xl lg:max-w-xl ' />
+                    <Image
+                        src={Ticket}
+                        alt='Sheng'
+                        className='absolute rounded-l-3xl max-w-2xl md:max-w-4xl lg:max-w-xl '
+                    />
                 </div>
             </div>
         </ContentContainer>

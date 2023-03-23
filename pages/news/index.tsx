@@ -55,7 +55,7 @@ const News: NextPageWithLayout = () => {
                     />
                     <Card
                         link='/news/space-tourism-is-going-green'
-                        title="Stellar Creates Opportunities For All"
+                        title="Space Tourism is Going Green"
                         author='Kevin Becker'
                         date='January 11th, 2019'
                     />

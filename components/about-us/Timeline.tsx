@@ -9,6 +9,8 @@ import Sheng from 'assets/images/sheng.jpg'
 import KennedySpaceCenterLiftoff from 'assets/images/kennedy-space-center-liftoff.jpg'
 import styled from 'styled-components'
 import tw from 'twin.macro'
+import FirstMoonLanding from 'assets/images/first-moon-landing.jpg'
+import SpaceRaceBegins from 'assets/images/space-race-begins.jpg'
 
 interface RightBlockProps {
     title?: ReactNode
@@ -56,7 +58,7 @@ const Timeline = () => {
                         left={
                             <LeftBlock className='lg:-translate-y-16'>
                                 <Image
-                                    src={Sheng}
+                                    src={SpaceRaceBegins}
                                     alt='Albert sheng'
                                     className='rounded-lg border border-accent-700 w-full max-w-md'
                                 />
@@ -66,7 +68,7 @@ const Timeline = () => {
                             <RightBlock
                                 className='lg:-translate-y-16'
                                 title='1950s - Space Race Begins'
-                                description='Bruh, we are  '
+                                description="The 1950s space race was a competition between the United States and the Soviet Union to explore outer space. The Soviet Union's launch of the first satellite, Sputnik, in 1957 sparked fear and concern in the United States, which led to increased investment in space exploration and the formation of NASA in 1958."
                             />
                         }
                     />
@@ -75,7 +77,7 @@ const Timeline = () => {
                         left={
                             <LeftBlock className='lg:-translate-y-16'>
                                 <Image
-                                    src={Sheng}
+                                    src={FirstMoonLanding}
                                     alt='Albert sheng'
                                     className='rounded-lg border border-accent-700 w-full max-w-md'
                                 />
@@ -85,7 +87,7 @@ const Timeline = () => {
                             <RightBlock
                                 className='lg:-translate-y-16'
                                 title='1969 - First Moon Landing'
-                                description='Bruh, we are  '
+                                description={`In 1969, the United States launched the Apollo 11 mission to land astronauts on the moon. The mission was made possible by the successful launch of a Saturn V rocket from the Kennedy Space Center in Florida. The rocket was the largest and most powerful ever built at the time, standing over 363 feet tall. It paved the way for the historic lunar landing of astronauts Neil Armstrong and Edwin "Buzz" Aldrin, Jr. later that year, marking a major milestone in human spaceflight.`}
                             />
                         }
                     />
@@ -104,7 +106,7 @@ const Timeline = () => {
                             <RightBlock
                                 className='lg:-translate-y-16'
                                 title='1989 - U.S. Funds Stellar'
-                                description='Bruh, we are  '
+                                description={`In 1989, the United States government decided to provide funding to the space tourism company Stellar. The goal was to promote private enterprise in space exploration and to create new opportunities for tourism beyond the Earth's atmosphere. The funding allowed Stellar to develop advanced spacecraft capable of transporting tourists on brief excursions into space.`}
                             />
                         }
                     />
@@ -126,7 +128,7 @@ const Timeline = () => {
                             <RightBlock
                                 className='lg:-translate-y-16'
                                 title='1998 - First Stellar Rocket'
-                                description='Bruh, we are  '
+                                description={`Stellar launched their first rocket in 1998, carrying a crew of trained astronauts and paying passengers into space. The rocket was specifically designed for space tourism and boasted state-of-the-art technology, ensuring a safe and comfortable journey for all on board. The launch marked a significant milestone in the development of space tourism as an industry, opening up new possibilities for travel and exploration beyond Earth's atmosphere.`}
                             />
                         }
                     />
@@ -143,7 +145,7 @@ const Timeline = () => {
                     <h2 className='mx-auto gradient-text font-bold text-3xl sm:text-4xl tracking-tight max-w-2xl mt-2'>
                         Stellar Opens up to the Public
                     </h2>
-                    <p className='text-accent-300 text-lg max-w-2xl mt-12 text-center mx-auto'>albert xi huan bing chiling. Ta ye xi huan Cody</p>
+                    <p className='text-accent-300 text-lg max-w-2xl mt-12 text-center mx-auto'>The space tourism company Stellar opens up to the public, offering a once-in-a-lifetime opportunity for people to travel to space and experience the wonders of the cosmos.</p>
                 </div>
             </ContentContainer>
             <BannerContainer>
