@@ -55,10 +55,10 @@ const NavBar = () => {
             name: 'Bookings',
             href: '/bookings',
         },
-        {
-            name: 'Safety',
-            href: '/safety',
-        },
+        // {
+        //     name: 'Safety',
+        //     href: '/safety',
+        // },
         {
             name: 'News',
             href: '/news',

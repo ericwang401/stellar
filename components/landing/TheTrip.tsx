@@ -8,6 +8,8 @@ import { classNames } from 'util/helpers'
 import styled, { keyframes } from 'styled-components'
 import tw from 'twin.macro'
 import Button from 'components/elements/Button'
+import GettingTrained from 'assets/images/getting-trained.png'
+import CheckingIn from 'assets/images/checking-in.jpg'
 
 interface RightBlockProps {
     number?: number
@@ -89,7 +91,7 @@ const TheTrip = () => {
                     left={
                         <LeftBlock className='lg:-translate-y-40'>
                             <Image
-                                src={Sheng}
+                                src={GettingTrained}
                                 alt='Albert sheng'
                                 className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
@@ -110,7 +112,7 @@ const TheTrip = () => {
                     left={
                         <LeftBlock className='lg:-translate-y-36'>
                             <Image
-                                src={Sheng}
+                                src={CheckingIn}
                                 alt='Albert sheng'
                                 className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
