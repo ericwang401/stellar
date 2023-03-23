@@ -50,6 +50,25 @@ const NavBar = () => {
         }
     }, [menuOpen])
 
+    const routes = [
+        {
+            name: 'Bookings',
+            href: '/bookings',
+        },
+        {
+            name: 'Safety',
+            href: '/safety',
+        },
+        {
+            name: 'News',
+            href: '/news',
+        },
+        {
+            name: 'About Us',
+            href: '/about-us',
+        },
+    ]
+
     return (
         <nav className='w-full'>
             <StyledContainer>
@@ -61,9 +80,11 @@ const NavBar = () => {
                                 <span className='text-white font-mediu'>Stellar</span>
                             </Link>
                             <div className='hidden sm:flex space-x-6'>
-                                <FlatNavLink href='/bookings'>Bookings</FlatNavLink>
-                                <FlatNavLink href='/news'>News</FlatNavLink>
-                                <FlatNavLink href='/about-us'>About Us</FlatNavLink>
+                                {routes.map(route => (
+                                    <FlatNavLink key={route.href} href={route.href} onClick={() => setMenuOpen(false)}>
+                                        {route.name}
+                                    </FlatNavLink>
+                                ))}
                             </div>
                         </div>
                         <div className='flex'>
@@ -96,9 +117,11 @@ const NavBar = () => {
                 leaveTo='opacity-0 translate-y-[5vh]'
             >
                 <ContentContainer>
-                    <FlatNavLink href='/bookings'>Bookings</FlatNavLink>
-                    <FlatNavLink href='/news'>News</FlatNavLink>
-                    <FlatNavLink href='/about-us'>About Us</FlatNavLink>
+                    {routes.map(route => (
+                        <FlatNavLink key={route.href} href={route.href} onClick={() => setMenuOpen(false)}>
+                            {route.name}
+                        </FlatNavLink>
+                    ))}
                 </ContentContainer>
             </Transition>
         </nav>

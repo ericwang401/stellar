@@ -12,7 +12,7 @@ export const FadeInAnimation = keyframes`
 export const FadeInUpAnimation = keyframes`
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(var(--y-offset, 100px));
     }
     100% {
         opacity: 1;
