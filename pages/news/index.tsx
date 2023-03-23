@@ -30,16 +30,46 @@ const News: NextPageWithLayout = () => {
                 <h1 className='font-semibold text-3xl pb-6'>Newsroom</h1>
                 <div className='flex flex-col space-y-6 sm:space-y-8'>
                     <Card
-                        link='/news/example'
-                        title="Spying on Foreign Intelligence Using Stellar Ships"
-                        author='John Cabot'
-                        date='February 14th, 2023'
+                        link='/news/stem-education-endorsed-by-stellar'
+                        title="STEM Education endorsed by Stellar"
+                        author='Kevin Becker'
+                        date='February 23th, 2023'
                     />
                     <Card
                         link='/news/we-are-supporting-ukraine'
                         title="We Are Supporting Ukraine"
                         author='Kevin Becker'
                         date='February 27th, 2022'
+                    />
+                    <Card
+                        link='/news/stellar-reaches-new-heights-with-stellar-gateway'
+                        title="Stellar Reaches New Heights with Stellar Gateway"
+                        author='Kevin Becker'
+                        date='November 27th, 2021'
+                    />
+                    <Card
+                        link='/news/first-ever-space-themed-amusement-park'
+                        title="First-Ever Space-Themed Amusement Park"
+                        author='Kevin Becker'
+                        date='May 8th, 2021'
+                    />
+                    <Card
+                        link='/news/space-tourism-is-going-green'
+                        title="Stellar Creates Opportunities For All"
+                        author='Kevin Becker'
+                        date='January 11th, 2019'
+                    />
+                    <Card
+                        link='/news/stellar-creates-opportunities-for-all'
+                        title="Stellar Creates Opportunities For All"
+                        author='Kevin Becker'
+                        date='October 28th, 2018'
+                    />
+                    <Card
+                        link='/news/creation-of-worlds-first-hotel-beyond-earth'
+                        title="Creation of World's First Hotel Beyond Earth"
+                        author='Kevin Becker'
+                        date='June 4th, 2017'
                     />
                     <Card
                         link='/news/helping-the-world-with-stellar-ships'
