@@ -11,6 +11,8 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import FirstMoonLanding from 'assets/images/first-moon-landing.png'
 import SpaceRaceBegins from 'assets/images/space-race-begins.jpg'
+import UsFundsStellar from 'assets/images/us-funds-stellar.png'
+import FirstRocketLaunch from 'assets/images/first-rocket-launch.png'
 
 interface RightBlockProps {
     title?: ReactNode
@@ -73,7 +75,7 @@ const Timeline = () => {
                         }
                     />
                     <TimelineBlock
-                        className='lg:min-h-[30rem]'
+                        className='lg:min-h-[40rem]'
                         left={
                             <LeftBlock className='lg:-translate-y-16'>
                                 <Image
@@ -92,11 +94,11 @@ const Timeline = () => {
                         }
                     />
                     <TimelineBlock
-                        className='lg:min-h-[30rem]'
+                        className='lg:min-h-[40rem]'
                         left={
                             <LeftBlock className='lg:-translate-y-16'>
                                 <Image
-                                    src={Sheng}
+                                    src={UsFundsStellar}
                                     alt='Albert sheng'
                                     className='rounded-lg border border-accent-700 w-full max-w-md'
                                 />
@@ -111,14 +113,14 @@ const Timeline = () => {
                         }
                     />
                     <TimelineBlock
-                        className='lg:min-h-[30rem]'
+                        className='lg:min-h-[40rem]'
                         line={
                             <div className='hidden lg:block h-full w-[1px] bg-gradient-to-b from-accent-600 to-orange-500' />
                         }
                         left={
                             <LeftBlock className='lg:-translate-y-16'>
                                 <Image
-                                    src={Sheng}
+                                    src={FirstRocketLaunch}
                                     alt='Albert sheng'
                                     className='rounded-lg border border-accent-700 w-full max-w-md'
                                 />
