@@ -5,6 +5,7 @@ import { classNames } from 'util/helpers'
 import SectionDivider from 'components/elements/SectionDivider'
 import { Parallax } from 'react-scroll-parallax'
 import { useState } from 'react'
+import Minister from 'assets/images/minister.jpg'
 
 interface BarProps {
     special?: boolean
@@ -59,7 +60,7 @@ const Safety = () => {
                     <figure className='md:flex bg-accent-800 rounded-lg border border-accent-700 p-8 md:p-0 overflow-hidden w-full lg:max-w-2xl'>
                         <Image
                             className='relative w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full max-md:mx-auto'
-                            src={Sheng}
+                            src={Minister}
                             alt='Sheng'
                             width='384'
                             height='512'

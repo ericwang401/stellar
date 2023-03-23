@@ -10,6 +10,7 @@ import tw from 'twin.macro'
 import Button from 'components/elements/Button'
 import GettingTrained from 'assets/images/getting-trained.png'
 import CheckingIn from 'assets/images/checking-in.jpg'
+import Boarding from 'assets/images/boarding.png'
 
 interface RightBlockProps {
     number?: number
@@ -135,7 +136,7 @@ const TheTrip = () => {
                     left={
                         <LeftBlock className='lg:-translate-y-36'>
                             <Image
-                                src={Sheng}
+                                src={Boarding}
                                 alt='Board'
                                 className='rounded-lg border border-accent-700 w-full max-w-md'
                             />
