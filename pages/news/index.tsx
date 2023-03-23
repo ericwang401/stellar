@@ -36,16 +36,16 @@ const News: NextPageWithLayout = () => {
                         date='February 14th, 2023'
                     />
                     <Card
-                        link='/news/example'
+                        link='/news/we-are-supporting-ukraine'
                         title="We Are Supporting Ukraine"
-                        author='John Cabot'
-                        date='February 14th, 2021'
+                        author='Kevin Becker'
+                        date='February 27th, 2022'
                     />
                     <Card
-                        link='/news/example'
-                        title="We Are Supporting Ukraine"
-                        author='John Cabot'
-                        date='February 14th, 2021'
+                        link='/news/helping-the-world-with-stellar-ships'
+                        title="Helping the World with Stellar Ships"
+                        author='Kevin Becker'
+                        date='September 14th, 2015'
                     />
                     <Card
                         link='/news/first-successful-rocket-launch'
