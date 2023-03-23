@@ -84,7 +84,7 @@ const Timeline = () => {
                         right={
                             <RightBlock
                                 className='lg:-translate-y-16'
-                                title='1969 - First Rocket Launch'
+                                title='1969 - First Moon Landing'
                                 description='Bruh, we are  '
                             />
                         }

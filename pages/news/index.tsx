@@ -42,9 +42,15 @@ const News: NextPageWithLayout = () => {
                         date='February 14th, 2021'
                     />
                     <Card
+                        link='/news/example'
+                        title="We Are Supporting Ukraine"
+                        author='John Cabot'
+                        date='February 14th, 2021'
+                    />
+                    <Card
                         link='/news/first-successful-rocket-launch'
                         title="First Successful Rocket Launch"
-                        author='John Cabot'
+                        author='Kevin Becker'
                         date='March 14th, 1998'
                     />
                 </div>
