@@ -82,7 +82,7 @@ const TheTrip = () => {
                             className='lg:-translate-y-16'
                             number={1}
                             title='Registration'
-                            description='A medical form will need to be filled out to help determine whether you are eligible for a trip with us. We are known for being friendly for a variety of conditions and continually working on allowing everyone to go to the moon. A waiver will need to filled out alongside this medical form. '
+                            description='A medical examination will need to be done to help determine whether you are eligible for a trip with us. We are known for being friendly for a variety of conditions and continually working on allowing everyone to go to the moon.'
                         />
                     }
                 />

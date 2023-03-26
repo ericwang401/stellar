@@ -51,7 +51,7 @@ const HeadingContainer = styled.div`
 
 const Hero = () => {
     return (
-        <ContentContainer className='relative flex flex-col items-center pt-20 md:pt-36'>
+        <ContentContainer className='relative flex flex-col items-center py-20 xl:py-36'>
             <HeadingContainer>
                 <Heading className='text-center !max-w-none'>Your Safety is our Priority</Heading>
             </HeadingContainer>
@@ -63,21 +63,21 @@ const Hero = () => {
                     x='0px'
                     y='0px'
                     viewBox='0 0 150 73'
-                    enable-background='new 0 0 150 73'
+                    enableBackground='new 0 0 150 73'
                     xmlSpace='preserve'
                     className='w-full h-full'
                 >
                     <defs>
                         <linearGradient id='gradient' x1='0%' y1='0%' x2='100%' y2='0%'>
-                            <stop offset='0%' stop-color={theme('colors.purple.500')} />
-                            <stop offset='50%' stop-color={theme('colors.fuchsia.500')} />
-                            <stop offset='100%' stop-color={theme('colors.pink.500')} />
+                            <stop offset='0%' stopColor={theme('colors.purple.500')} />
+                            <stop offset='50%' stopColor={theme('colors.fuchsia.500')} />
+                            <stop offset='100%' stopColor={theme('colors.pink.500')} />
                         </linearGradient>
                     </defs>
                     <polyline
                         stroke='url(#gradient)'
-                        stroke-width='3'
-                        stroke-miterlimit='10'
+                        strokeWidth='3'
+                        strokeMiterlimit='10'
                         points='0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486'
                     />
                 </svg>

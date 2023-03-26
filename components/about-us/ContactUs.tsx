@@ -22,8 +22,8 @@ const ContactUs = () => {
                     can fill out the form below and we'll get back to you as soon as possible.
                 </p>
 
-                <div className='flex flex-col gap-20 lg:flex-row lg:justify-between'>
-                    <div className='flex flex-col max-w-xl mt-16 shrink-0'>
+                <div className='flex flex-col gap-20 lg:flex-row lg:justify-between mt-16'>
+                    <div className='flex flex-col max-w-2xl w-full shrink-0'>
                         <div className='grid gap-4 grid-cols-2'>
                             <TextInput label='Name' />
                             <TextInput label='Email' />

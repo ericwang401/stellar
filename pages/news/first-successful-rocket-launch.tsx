@@ -22,7 +22,7 @@ const FirstSuccessfulRocketLaunch: NextPageWithLayout = () => {
                     successful launch of their spaceship, is a testament to their hard work and dedication.
                     <br />
                     <br />
-                    The spaceship, named Stellar 1, is a cutting-edge spacecraft that uses advanced technologies to
+                    The spaceship, named Stellar One, is a cutting-edge spacecraft that uses advanced technologies to
                     travel through space. It is equipped with state-of-the-art engines, control systems, and scientific
                     instruments, making it one of the most advanced spaceships ever built. The design of the spaceship
                     is a result of years of research, development, and testing by a team of experts in the field of
