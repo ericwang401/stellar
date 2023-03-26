@@ -54,17 +54,17 @@ const RocketFeatures = () => {
                     <FeatureBlock
                         icon={mdiTurbine}
                         title='Multi-Engine Redundancy'
-                        description='The rocket would feature multiple engines, each with its own independent control system. This redundancy would provide a backup in case of any engine failures, ensuring the safety of the passengers.'
+                        description='The rocket features multiple engines, each with its own independent control system. This redundancy would provide a backup in case of any engine failures, ensuring the safety of the passengers.'
                     />
                     <FeatureBlock
                         icon={mdiRefreshAuto}
                         title='Automated Flight Controls'
-                        description='The rocket would be equipped with advanced automated flight controls, which would be programmed to make rapid adjustments and corrections during the flight. This would ensure the rocket stays on course and within safe operating parameters.'
+                        description='The rocket is equipped with advanced automated flight controls, which is programmed to make rapid adjustments and corrections during the flight. This would ensure the rocket stays on course and within safe operating parameters.'
                     />
                     <FeatureBlock
                         icon={mdiExitRun}
                         title='Emergency Escape System'
-                        description='The rocket would be equipped with an emergency escape system, which could be activated in case of an emergency, allowing the crew and passengers to safely eject from the rocket and land back on Earth.'
+                        description='The rocket is equipped with an emergency escape system, which can be activated in case of an emergency, allowing the crew and passengers to safely eject from the rocket and land back on Earth.'
                     />
                 </div>
                 <Image src={RocketShip} alt='Rocket ship' className='hidden md:block brightness-75' />
@@ -72,17 +72,17 @@ const RocketFeatures = () => {
                     <FeatureBlock
                         icon={mdiShield}
                         title='Robust Safety Testing'
-                        description='The rocket would undergo extensive safety testing, including rigorous stress testing and simulations to ensure that it is capable of handling a variety of different scenarios that may arise during the flight.'
+                        description='The rocket has undergone extensive safety testing, including rigorous stress testing and simulations to ensure that it is capable of handling a variety of different scenarios that may arise during the flight.'
                     />
                     <FeatureBlock
                         icon={mdiHammerWrench}
                         title='Reliable Materials and Manufacturing'
-                        description='The rocket would be constructed using only the highest-quality materials and manufactured to exacting standards. This would help ensure the rocket is reliable and safe for the passengers.'
+                        description='The rocket is constructed using only the highest-quality materials and manufactured to exacting standards. This will help ensure the rocket is reliable and safe for the passengers.'
                     />
                     <FeatureBlock
                         icon={mdiParachute}
                         title='Parachute Landing System'
-                        description='The rocket would feature a parachute landing system, which would allow it to land safely in case of any unforeseen issues during the flight.'
+                        description='The rocket features a parachute landing system, which allows it to land safely in case of any unforeseen issues during the flight.'
                     />
                 </div>
             </div>
