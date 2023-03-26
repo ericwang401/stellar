@@ -13,7 +13,7 @@ const StyledFeatureBlock = styled.div<
         inView: boolean
     } & ComponentPropsWithRef<'div'>
 >`
-    ${tw`flex flex-col transition duration-500 min-h-[17rem]`}
+    ${tw`flex flex-col transition duration-500 sm:min-h-[17rem]`}
     ${({ inView }) => (inView ? tw`opacity-100 translate-y-0` : tw`opacity-0 translate-y-10`)}
 `
 
@@ -49,7 +49,7 @@ const RocketFeatures = () => {
                     system.
                 </p>
             </div>
-            <div className='grid grid-cols-2 gap-12 md:gap-0 lg:grid-cols-3 md:mt-24'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-12 lg:gap-0 lg:grid-cols-3 md:mt-24'>
                 <div className='flex flex-col gap-12 md:gap-28 pt-24 md:pr-12'>
                     <FeatureBlock
                         icon={mdiTurbine}
@@ -68,7 +68,7 @@ const RocketFeatures = () => {
                     />
                 </div>
                 <Image src={RocketShip} alt='Rocket ship' className='hidden md:block brightness-75' />
-                <div className='flex flex-col gap-12 md:gap-28 pt-24 md:pr-12 lg:pr-0 lg:pl-12'>
+                <div className='flex flex-col gap-12 md:gap-28 lg:pt-24 md:pr-12 lg:pr-0 lg:pl-12'>
                     <FeatureBlock
                         icon={mdiShield}
                         title='Robust Safety Testing'

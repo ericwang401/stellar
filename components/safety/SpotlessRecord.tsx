@@ -1,35 +1,11 @@
 import ContentContainer from 'components/ContentContainer'
-import styled from 'styled-components'
-import tw from 'twin.macro'
 import Microsoft from 'assets/images/microsoft.svg'
 import Image from 'next/image'
 import Nasa from 'assets/images/nasa.svg'
-
-const FrostedCard = styled.div`
-    ${tw`relative border border-accent-700 rounded-lg px-8 py-6`}
-
-    &:before {
-        content: '';
-        width: 150px;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        z-index: 1;
-        background: linear-gradient(270deg, transparent, hsla(0, 0%, 6%, 0.9));
-    }
-
-    &:after {
-        content: '';
-        background: linear-gradient(90deg, transparent, hsla(0, 0%, 6%, 0.9));
-        width: 150px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-    }
-`
+import UnitedStatesSpaceForce from 'assets/images/united-states-space-force.svg'
+import Tencent from 'assets/images/tencent.svg'
+import Google from 'assets/images/google.svg'
+import FrostedCard from 'components/elements/FrostedCard'
 
 const SpotlessRecord = () => {
     return (
@@ -54,9 +30,12 @@ const SpotlessRecord = () => {
                     </p>
                 </FrostedCard>
             </div>
-            <div className='flex justify-between py-24'>
+            <div className='grid grid-cols-2 place-items-center gap-12 md:flex justify-between py-24'>
                 <Image src={Microsoft} alt='Microsoft' className='grayscale w-36' />
-                <Image src={Nasa} alt='NASA' className='grayscale w-16' />
+                <Image src={Google} alt='Google' className='brightness-200 grayscale w-24' />
+                <Image src={Nasa} alt='NASA' className='grayscale w-24' />
+                <Image src={UnitedStatesSpaceForce} alt='United States Space Force' className='grayscale w-20' />
+                <Image src={Tencent} alt='Tencent' className='grayscale brightness-200 w-32' />
             </div>
         </ContentContainer>
     )
