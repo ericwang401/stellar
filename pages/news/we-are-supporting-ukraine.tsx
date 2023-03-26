@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import Ukraine from 'assets/images/ukraine.png'
 
 const WeAreSupportingUkraine: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'February 27th, 2022'}
             title={'We Are Supporting Ukraine'}
-            image={RocketLaunch}
+            image={Ukraine}
             content={
                 <>
                     In recent years, space tourism has become an increasingly popular concept, with private companies

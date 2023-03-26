@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import SpaceHotel from 'assets/images/space-hotel.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'June 4th, 2017'}
             title={"Creation of World's First Hotel Beyond Earth"}
-            image={RocketLaunch}
+            image={SpaceHotel}
             content={
                 <>
                     Space tourism company Stellar has announced its plans to launch an ambitious project to build a

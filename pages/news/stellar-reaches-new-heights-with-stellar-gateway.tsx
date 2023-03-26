@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import StellarGateway from 'assets/images/stellar-gateway.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'November 27th, 2021'}
             title={'Stellar Reaches New Heights with Stellar Gateway'}
-            image={RocketLaunch}
+            image={StellarGateway}
             content={
                 <>
                     Stellar has built a new space station that will serve as a hub for space tourism and research. The

@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import AmusementPark from 'assets/images/amusement-park.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'May 8th, 2021'}
             title={'First-Ever Space-Themed Amusement Park'}
-            image={RocketLaunch}
+            image={AmusementPark}
             content={
                 <>
                     Space tourism company Stellar has unveiled plans to create the first-ever space-themed amusement

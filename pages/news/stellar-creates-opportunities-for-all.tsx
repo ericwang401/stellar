@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import OpportunitiesForAll from 'assets/images/opportunities-for-all.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'October 28th, 2018'}
             title={'Stellar Creates Opportunities For All'}
-            image={RocketLaunch}
+            image={OpportunitiesForAll}
             content={
                 <>
                     Stellar has announced the launch of a new program to train aspiring astronauts for future missions

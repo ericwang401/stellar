@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import GoingGreen from 'assets/images/going-green.png'
 
 const FirstSuccessfulRocketLaunch: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'January 11th, 2019'}
             title={'Space Tourism is Going Green'}
-            image={RocketLaunch}
+            image={GoingGreen}
             content={
                 <>
                     Stellar has announced a new initiative to promote sustainable tourism practices in space. The

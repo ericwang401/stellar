@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import HelpingOtherCountries from 'assets/images/helping-other-countries.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'September 14th, 2015'}
             title={'Helping the World with Stellar Ships'}
-            image={RocketLaunch}
+            image={HelpingOtherCountries}
             content={
                 <>
                     Stellar, a leading space tourism company, has been making waves in the space industry with its

@@ -1,14 +1,14 @@
 import LandingLayout from 'components/elements/layouts/LandingLayout'
 import { NextPageWithLayout } from 'pages/_app'
 import NewsArticle from 'components/elements/NewsArticle'
-import RocketLaunch from 'assets/images/rocket-launch.jpeg'
+import StemEducation from 'assets/images/stem-education.png'
 
 const HelpingTheWorldWithStellarShips: NextPageWithLayout = () => {
     return (
         <NewsArticle
             date={'February 23th, 2023'}
             title={'STEM Education endorsed by Stellar'}
-            image={RocketLaunch}
+            image={StemEducation}
             content={
                 <>
                     Stellar has announced a new program aimed at promoting education and scientific literacy among young
