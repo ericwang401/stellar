@@ -68,7 +68,7 @@ const RocketFeatures = () => {
                     />
                 </div>
                 <Image src={RocketShip} alt='Rocket ship' className='hidden md:block brightness-75' />
-                <div className='flex flex-col gap-12 md:gap-28 lg:pt-24 md:pr-12 lg:pr-0 lg:pl-12'>
+                <div className='flex flex-col gap-12 md:gap-28 pt-24 md:pt-0 lg:pt-24 md:pr-12 lg:pr-0 lg:pl-12'>
                     <FeatureBlock
                         icon={mdiShield}
                         title='Robust Safety Testing'

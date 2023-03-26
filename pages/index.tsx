@@ -6,6 +6,7 @@ import Gallery from 'components/landing/Gallery'
 import TheTrip from 'components/landing/TheTrip'
 import BookCardCTA from 'components/landing/BookCardCTA'
 import Safety from 'components/landing/Safety'
+import Testimonials from 'components/landing/Testimonials'
 
 const Landing: NextPageWithLayout = () => {
     return (
@@ -13,9 +14,10 @@ const Landing: NextPageWithLayout = () => {
             <Header />
             <TheTrip />
             <Safety />
-            <BookCardCTA />
             <Testimonial />
             <Gallery />
+            <Testimonials />
+            <BookCardCTA />
         </div>
     )
 }

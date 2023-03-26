@@ -30,6 +30,7 @@ const Footer = () => {
                     <div className='grid md:flex grid-cols-2 sm:grid-cols-3 md:gap-10 max-md:order-1'>
                         <FlatNavLink href='/'>Home</FlatNavLink>
                         <FlatNavLink href='/bookings'>Bookings</FlatNavLink>
+                        <FlatNavLink href='/safety'>Safety</FlatNavLink>
                         <FlatNavLink href='/news'>News</FlatNavLink>
                         <FlatNavLink href='/about-us'>About Us</FlatNavLink>
                         <FlatNavLink href='/documentation'>Documentation</FlatNavLink>
